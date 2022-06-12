@@ -31,7 +31,7 @@ def sign_in(meetingid, pswd):
  #       time.sleep(1.5)
 
     last_join_button= pyautogui.locateCenterOnScreen('last_join_buttton.png')
-    pyautogui.moveTo(last_join_button)
+    pyautogui.moveTo(last_join_button.x/2,last_join_button.y/2)
     pyautogui.click()
 
     # meeting_pswd_btn= pyautogui.locateOnScreen("meeting_password_button.png", confidence=0.9)
